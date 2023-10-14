@@ -16,10 +16,10 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.E))
             _angleY -= _angularSpeed;
 
-        if (Input.GetKey((KeyCode.E)))
+        if (Input.GetKey((KeyCode.Q)))
             _angleY += _angularSpeed;
 
         transform.position = _target.transform.position;
