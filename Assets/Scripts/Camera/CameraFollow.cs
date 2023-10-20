@@ -24,5 +24,6 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = _target.transform.position;
         transform.rotation = Quaternion.Euler(0, _angleY, 0);
+        
     }
 }

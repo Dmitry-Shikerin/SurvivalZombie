@@ -23,6 +23,8 @@ public class PlayerOverlapCollision : MonoBehaviour
     [Header("Gizmos")] [SerializeField] private DrawGizmosType _drawGizmosType;
     [SerializeField] private Color _gizmosColor = Color.cyan;
 
+    public event Action<IInteractible> OnInteractibleChanged; 
+    
     private readonly Collider[] _overlapResults = new Collider[32];
     private int _overlapResultsCount;
 
@@ -34,8 +36,12 @@ public class PlayerOverlapCollision : MonoBehaviour
     {
         if (TryFindInteraction())
         {
-            if (Input.GetKeyDown(KeyCode.F))
-                TryInteracted();
+                // TryInteracted();
+                TryInteracted<IInteractible>();
+        }
+        else
+        {
+            OnInteractibleChanged?.Invoke(null);
         }
     }
 
@@ -66,11 +72,41 @@ public class PlayerOverlapCollision : MonoBehaviour
         return Physics.OverlapSphereNonAlloc(position, _sphereRadius, _overlapResults, _searchLayerMask);
     }
 
-    private void TryInteracted()
+    // скорее всего нужно будет написать дженериковый метод
+    // private void TryInteracted()
+    // {
+    //     for (int i = 0; i < _overlapResultsCount; i++)
+    //     {
+    //         if (_overlapResults[i].TryGetComponent(out IInteractible interactive) == false)
+    //         {
+    //             continue;
+    //         }
+    //
+    //         if (_considerObstacles)
+    //         {
+    //             var startPointPosition = _overlapStartPoint.position;
+    //             var colliderPosition = _overlapResults[i].transform.position;
+    //             var hasObstacle = Physics.Linecast(startPointPosition, colliderPosition, _obstacLayerMask.value);
+    //
+    //             if (hasObstacle)
+    //             {
+    //                 continue;
+    //             }
+    //         }
+    //         
+    //         OnInteractibleChanged?.Invoke(interactive);
+    //         
+    //         //нужно поправить 
+    //         if (Input.GetKeyDown(KeyCode.F))
+    //             interactive.Interact();
+    //     }
+    // }
+    
+    private void TryInteracted<T>() where T : IInteractible
     {
         for (int i = 0; i < _overlapResultsCount; i++)
         {
-            if (_overlapResults[i].TryGetComponent(out IInteractible interactive) == false)
+            if (_overlapResults[i].TryGetComponent(out T interactive) == false)
             {
                 continue;
             }
@@ -86,10 +122,15 @@ public class PlayerOverlapCollision : MonoBehaviour
                     continue;
                 }
             }
-
-            interactive.Interact();
+            
+            OnInteractibleChanged?.Invoke(interactive);
+            
+            //нужно поправить 
+            if (Input.GetKeyDown(KeyCode.F))
+                interactive.Interact();
         }
     }
+
 
     #region DrawGizmos
 
