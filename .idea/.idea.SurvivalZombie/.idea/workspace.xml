@@ -5,15 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f8880ac-2406-4fd5-b34d-bd7e20db6998" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerPresenter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/PlayerStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/PlayerStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextChangeWeapon.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextChangeWeapon.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextInput.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/IContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/IContext.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/IdlePlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/IdlePlayerState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/JumpPlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/JumpPlayerState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoGunPlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoGunPlayerState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoScopePlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoScopePlayerState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/RunPlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/RunPlayerState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/IPlayerTransition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/IPlayerTransition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransition.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransitionBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransitionBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunPlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunPlayerState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopePlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopePlayerState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/IInteractible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/IInteractible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Interaction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Interaction.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/MetallGate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/InteractionMetallGate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/MetallGate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/InteractionMetallGate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Movements/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/Movements/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Movements/PlayerMovementCharacteristics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/Movements/PlayerMovementCharacteristics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/MyPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/MyPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/DrawGizmosType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/DrawGizmosType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/OverlapType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/OverlapType.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/PlayerOverlapCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/PlayerOverlapCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Interactions/UIInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Interactions/UIInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +55,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/InteractionMetallGate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/AnimationControllers/PlayerAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/Movements/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerInteractions/Overlap/PlayerOverlapCollision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Interactions/UIInteraction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,6 +155,8 @@
       <workItem from="1697613457797" duration="26840000" />
       <workItem from="1697697619085" duration="5764000" />
       <workItem from="1697806112305" duration="10485000" />
+      <workItem from="1697832322669" duration="4810000" />
+      <workItem from="1697878561334" duration="1540000" />
     </task>
     <servers />
   </component>

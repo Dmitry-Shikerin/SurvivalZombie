@@ -1,4 +1,4 @@
-namespace Players.Overlap
+namespace Players.PlayerInteractions.Overlap
 {
     public enum OverlapType
     {
