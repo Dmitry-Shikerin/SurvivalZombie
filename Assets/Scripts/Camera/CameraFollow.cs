@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour
         _angleY = transform.position.y;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKey(KeyCode.E))
             _angleY -= _angularSpeed;
@@ -24,6 +24,7 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = _target.transform.position;
         transform.rotation = Quaternion.Euler(0, _angleY, 0);
-        
+
+
     }
 }

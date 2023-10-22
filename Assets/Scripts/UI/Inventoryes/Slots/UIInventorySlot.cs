@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Inventories;
 using Inventories.Abstract;
 using UI.Inventoryes.Inventory;
 using UI.Inventorys.Inventory;
@@ -30,8 +31,8 @@ public class UIInventorySlot : UISlot
     {
         UIInventoryItem otherItemUI = eventData.pointerDrag.GetComponent<UIInventoryItem>();
         UIInventorySlot otherSlotUI = otherItemUI.GetComponentInParent<UIInventorySlot>();
-        var otherSlot = otherSlotUI.Slot;
-        var inventory = _uiInventory.Inventory;
+        IInventorySlot otherSlot = otherSlotUI.Slot;
+        InventoryWithSlots inventory = _uiInventory.Inventory;
         
         inventory.TransitFromSlotToSlot(this, otherSlot, Slot);
         

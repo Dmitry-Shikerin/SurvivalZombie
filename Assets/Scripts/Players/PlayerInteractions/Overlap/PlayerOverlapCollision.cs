@@ -35,10 +35,6 @@ namespace Players.PlayerInteractions.Overlap
         private readonly Collider[] _overlapResults = new Collider[32];
         private int _overlapResultsCount;
 
-        void Start()
-        {
-        }
-
         void Update()
         {
             if (TryFindInteraction())
@@ -79,35 +75,6 @@ namespace Players.PlayerInteractions.Overlap
             return Physics.OverlapSphereNonAlloc(position, _sphereRadius, _overlapResults, _searchLayerMask);
         }
 
-        // скорее всего нужно будет написать дженериковый метод
-        // private void TryInteracted()
-        // {
-        //     for (int i = 0; i < _overlapResultsCount; i++)
-        //     {
-        //         if (_overlapResults[i].TryGetComponent(out IInteractible interactive) == false)
-        //         {
-        //             continue;
-        //         }
-        //
-        //         if (_considerObstacles)
-        //         {
-        //             var startPointPosition = _overlapStartPoint.position;
-        //             var colliderPosition = _overlapResults[i].transform.position;
-        //             var hasObstacle = Physics.Linecast(startPointPosition, colliderPosition, _obstacLayerMask.value);
-        //
-        //             if (hasObstacle)
-        //             {
-        //                 continue;
-        //             }
-        //         }
-        //         
-        //         OnInteractibleChanged?.Invoke(interactive);
-        //         
-        //         //нужно поправить 
-        //         if (Input.GetKeyDown(KeyCode.F))
-        //             interactive.Interact();
-        //     }
-        // }
     
         private void TryInteracted<T>() where T : IInteractible
         {
@@ -157,22 +124,15 @@ namespace Players.PlayerInteractions.Overlap
                         continue;
                     }
                 }
-            
-                // if(typeof(T) == typeof(ITakeble))
                 
-                // OnInteractibleChanged?.Invoke(interactive);
-                //нужно поправить 
                 if (Input.GetKeyDown(KeyCode.F))
                 {
-                    IInventoryItem item;
-                    // interactive.Interact();
-                    item = interactive.GetItem();
+                     IInventoryItem item = interactive.GetItem();
                     Debug.Log($"item {item.Type}, добавлен в инвентарь");
                     _uiInventorySecond.Inventory.TryToAdd(this, item);
                 }
             }
         }
-
 
         #region DrawGizmos
 

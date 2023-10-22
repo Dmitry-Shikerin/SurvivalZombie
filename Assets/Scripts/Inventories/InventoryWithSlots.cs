@@ -144,6 +144,10 @@ namespace Inventories
 
         public void TransitFromSlotToSlot(object sender, IInventorySlot fromSlot, IInventorySlot toSlot)
         {
+            //добавил
+            if (fromSlot == toSlot)
+                return;
+            
             if (fromSlot.IsEmpty)
                 return;
 
