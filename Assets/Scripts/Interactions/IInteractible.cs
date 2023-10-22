@@ -1,4 +1,5 @@
 
+using Inventories.Abstract;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ namespace Interactions
         Sprite UISprite { get; }
         
         void Interact();
+        // void Interact(out IInventoryItem item);
         string GetDescription();
     }
 }

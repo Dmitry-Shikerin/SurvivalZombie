@@ -30,14 +30,14 @@ namespace UI.Inventorys.Inventory
 
         public void FillSlots()
         {
-            var allSlots = Inventory.GetAllSlots();
-            var availableSlots = new List<IInventorySlot>(allSlots);
+            IInventorySlot[] allSlots = Inventory.GetAllSlots();
+            List<IInventorySlot> availableSlots = new List<IInventorySlot>(allSlots);
 
             int filledSlots = 5;
 
             for (int i = 0; i < filledSlots; i++)
             {
-                var filledSlot = AddRandomApplesIntoRandomSlot(availableSlots);
+                IInventorySlot filledSlot = AddRandomApplesIntoRandomSlot(availableSlots);
                 availableSlots.Remove(filledSlot);
                 
                 filledSlot = AddRandomPeppersIntoRandomSlot(availableSlots);
@@ -71,13 +71,13 @@ namespace UI.Inventorys.Inventory
 
         private void SetUpInventoryUI(InventoryWithSlots inventory)
         {
-            var allSlots = Inventory.GetAllSlots();
-            var allSlotsCount = allSlots.Length;
+            IInventorySlot[] allSlots = Inventory.GetAllSlots();
+            int allSlotsCount = allSlots.Length;
 
             for (int i = 0; i < allSlotsCount; i++)
             {
-                var slot = allSlots[i];
-                var uiSlot = _uiSlots[i];
+                IInventorySlot slot = allSlots[i];
+                UIInventorySlot uiSlot = _uiSlots[i];
                 uiSlot.SetSlot(slot);
                 uiSlot.Refresh();
             }

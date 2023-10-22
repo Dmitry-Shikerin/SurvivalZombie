@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Inventories.Abstract;
+using UI.Inventoryes.Inventory;
 using UI.Inventorys.Inventory;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,13 +11,14 @@ public class UIInventorySlot : UISlot
 {
     [SerializeField] private UIInventoryItem _uiInventoryItem;
     
-    private UIInventory _uiInventory;
+    private UIInventorySecond _uiInventory;
     
     public IInventorySlot Slot { get; private set; }
 
     private void Awake()
     {
-        _uiInventory = GetComponentInParent<UIInventory>();
+        _uiInventory = GetComponentInParent<UIInventorySecond>() 
+                       ?? throw new NullReferenceException(nameof(UIInventory));
     }
 
     public void SetSlot(IInventorySlot newSlot)

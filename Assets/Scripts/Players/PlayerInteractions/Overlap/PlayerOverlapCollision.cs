@@ -1,5 +1,7 @@
 using System;
 using Interactions;
+using Inventories.Abstract;
+using UI.Inventoryes.Inventory;
 using UnityEngine;
 
 namespace Players.PlayerInteractions.Overlap
@@ -25,6 +27,9 @@ namespace Players.PlayerInteractions.Overlap
         [SerializeField] private DrawGizmosType _drawGizmosType;
         [SerializeField] private Color _gizmosColor = Color.cyan;
 
+        //это не должно здесь находится
+        [SerializeField] private UIInventorySecond _uiInventorySecond;
+
         public event Action<IInteractible> OnInteractibleChanged; 
     
         private readonly Collider[] _overlapResults = new Collider[32];
@@ -38,7 +43,7 @@ namespace Players.PlayerInteractions.Overlap
         {
             if (TryFindInteraction())
             {
-                // TryInteracted();
+                TryTake<ITakeble>();
                 TryInteracted<IInteractible>();
             }
             else
@@ -126,10 +131,45 @@ namespace Players.PlayerInteractions.Overlap
                 }
             
                 OnInteractibleChanged?.Invoke(interactive);
-            
                 //нужно поправить 
                 if (Input.GetKeyDown(KeyCode.F))
                     interactive.Interact();
+            }
+        }
+        
+        private void TryTake<T>() where T : ITakeble
+        {
+            for (int i = 0; i < _overlapResultsCount; i++)
+            {
+                if (_overlapResults[i].TryGetComponent(out T interactive) == false)
+                {
+                    continue;
+                }
+
+                if (_considerObstacles)
+                {
+                    var startPointPosition = _overlapStartPoint.position;
+                    var colliderPosition = _overlapResults[i].transform.position;
+                    var hasObstacle = Physics.Linecast(startPointPosition, colliderPosition, _obstacLayerMask.value);
+
+                    if (hasObstacle)
+                    {
+                        continue;
+                    }
+                }
+            
+                // if(typeof(T) == typeof(ITakeble))
+                
+                // OnInteractibleChanged?.Invoke(interactive);
+                //нужно поправить 
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    IInventoryItem item;
+                    // interactive.Interact();
+                    item = interactive.GetItem();
+                    Debug.Log($"item {item.Type}, добавлен в инвентарь");
+                    _uiInventorySecond.Inventory.TryToAdd(this, item);
+                }
             }
         }
 
