@@ -2,14 +2,16 @@ using System;
 using System.Collections.Generic;
 using Players.PlayerStateMachines.States.Contexts;
 using Players.PlayerStateMachines.Transitions;
+using StateMachines.States.Context;
+using StateMachines.Transitions;
 
 namespace Players.PlayerStateMachines.States
 {
-    public abstract class PlayerStateBase
+    public abstract class StateBase
     {
-        private readonly IEnumerable<IPlayerTransition> _transitions;
+        private readonly IEnumerable<ITransition> _transitions;
 
-        protected PlayerStateBase(IEnumerable<IPlayerTransition> transitions)
+        protected StateBase(IEnumerable<ITransition> transitions)
         {
             _transitions = transitions;
         }
@@ -26,9 +28,9 @@ namespace Players.PlayerStateMachines.States
 
         public bool TryGetNextState<T>(T context, out Type state) where T : IContext
         {
-            foreach (IPlayerTransition transition in _transitions)
+            foreach (ITransition transition in _transitions)
             {
-                if (transition is IPlayerTransition<T> concreteTransition)
+                if (transition is ITransition<T> concreteTransition)
                 {
                     if (concreteTransition.CanTransit(context))
                     {

@@ -19,25 +19,27 @@ namespace UI.Inventoryes.Inventory
         public bool IsVisible => _canvas.gameObject.activeSelf;
 
         
-        private void Awake()
-        {
-            Inventory = new InventoryWithSlots(15);
-            Inventory.OnInventoryStateChanged += OnInventoryStateChanged;
-            
-            _canvas = GetComponentInChildren<Canvas>(true);
-            _uiSlots = GetComponentsInChildren<UIInventorySlot>(true);
-            FillSlots();
-        }
+        // private void Awake()
+        // {
+        //     Inventory = new InventoryWithSlots(15);
+        //     Inventory.OnInventoryStateChanged += OnInventoryStateChanged;
+        //     
+        //     _canvas = GetComponentInChildren<Canvas>(true);
+        //     _uiSlots = GetComponentsInChildren<UIInventorySlot>(true);
+        //     FillSlots();
+        // }
 
         
         private void Start()
         {
-            // Inventory = new InventoryWithSlots(15);
-            // Inventory.OnInventoryStateChanged += OnInventoryStateChanged;
-
-            // _canvas = GetComponentInChildren<Canvas>();
-            // _uiSlots = GetComponentsInChildren<UIInventorySlot>();
+            Inventory = new InventoryWithSlots(15);
+            Inventory.OnInventoryStateChanged += OnInventoryStateChanged;
+        
+            _canvas = GetComponentInChildren<Canvas>(true);
+            _uiSlots = GetComponentsInChildren<UIInventorySlot>(true);
             // FillSlots();
+            
+            SetUpInventoryUI(Inventory);
         }
 
         private void Update()

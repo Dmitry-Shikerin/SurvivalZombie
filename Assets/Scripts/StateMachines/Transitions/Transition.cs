@@ -1,16 +1,16 @@
 using System;
 using Players.PlayerStateMachines.States;
-using Players.PlayerStateMachines.States.Contexts;
+using StateMachines.States.Context;
 
-namespace Players.PlayerStateMachines.Transitions
+namespace StateMachines.Transitions
 {
-    public  class PlayerTransition<TState, TContext> : IPlayerTransition<TContext>
-        where TState : PlayerStateBase
+    public  class Transition<TState, TContext> : ITransition<TContext>
+        where TState : StateBase
         where TContext : IContext
     {
         private readonly Func<TContext, bool> _condition;
 
-        public PlayerTransition(Func<TContext, bool> condition)
+        public Transition(Func<TContext, bool> condition)
         {
             _condition = condition;
         }

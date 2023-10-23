@@ -1,4 +1,4 @@
-namespace Players.PlayerStateMachines.States.Contexts
+namespace StateMachines.States.Context
 {
     public interface IContext
     {

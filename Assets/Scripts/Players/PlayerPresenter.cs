@@ -4,6 +4,8 @@ using Players.PlayerStateMachines;
 using Players.PlayerStateMachines.States;
 using Players.PlayerStateMachines.States.Contexts;
 using Players.PlayerStateMachines.Transitions;
+using StateMachines;
+using StateMachines.Transitions;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -35,28 +37,28 @@ namespace Players
 
             #region StateMachine
 
-            List<IPlayerTransition> noGunTransitions = new List<IPlayerTransition>()
+            List<ITransition> noGunTransitions = new List<ITransition>()
             {
-                new TransitionToNoScopePlayerState(),
-                new PlayerTransition<NoScopePlayerState, ContextChangeWeapon>
+                new TransitionToNoScopeState(),
+                new Transition<NoScopeState, ContextChangeWeapon>
                     (Condition),
                 // new PlayerTransitionToJumpState
             };
 
-            List<IPlayerTransition> noScopeTransitions = new List<IPlayerTransition>()
+            List<ITransition> noScopeTransitions = new List<ITransition>()
             {
-                new TransitionToNoGunPlayerState(),
+                new TransitionToNoGunState(),
             };
 
-            Dictionary<Type, PlayerStateBase> states = new Dictionary<Type, PlayerStateBase>()
+            Dictionary<Type, StateBase> states = new Dictionary<Type, StateBase>()
             {
                 //     [typeof(NoGunPlayerState)] = new NoGunPlayerState(noGunTransitions),
                 //     [typeof(NoScopePlayerState)] = new NoScopePlayerState(noScopeTransitions, _animationControllerSecond),
-                [typeof(IdlePlayerState)] = new IdlePlayerState
+                [typeof(IdleState)] = new IdleState
                 (
-                    new IPlayerTransition[]
+                    new ITransition[]
                     {
-                        new PlayerTransition<JumpPlayerState, ContextInput>
+                        new Transition<JumpState, ContextInput>
                         (
                             input => input.Key == KeyCode.Space
                         ),
@@ -69,9 +71,9 @@ namespace Players
                 ),
             };
 
-            PlayerStateMachine stateMachine = new PlayerStateMachine(states);
+            StateMachine stateMachine = new StateMachine(states);
 
-            stateMachine.Start<NoGunPlayerState>();
+            stateMachine.Start<NoGunState>();
             //нужно передать оружие
             stateMachine.Update(new ContextChangeWeapon(_currentWeapon));
             stateMachine.Update(new ContextChangeWeapon(null));

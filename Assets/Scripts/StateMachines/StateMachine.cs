@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
 using Players.PlayerStateMachines.States;
-using Players.PlayerStateMachines.States.Contexts;
+using StateMachines.States.Context;
 
-namespace Players.PlayerStateMachines
+namespace StateMachines
 {
-    public class PlayerStateMachine
+    public class StateMachine
     {
-        private Dictionary<Type, PlayerStateBase> _states;
+        private Dictionary<Type, StateBase> _states;
 
-        private PlayerStateBase _current;
+        private StateBase _current;
 
-        public PlayerStateMachine(Dictionary<Type, PlayerStateBase> states)
+        public StateMachine(Dictionary<Type, StateBase> states)
         {
             _states = states;
         }
@@ -36,7 +36,7 @@ namespace Players.PlayerStateMachines
             _current.Enter();
         }
 
-        public void Start<T>() where T : PlayerStateBase
+        public void Start<T>() where T : StateBase
         {
             MoveNextState(typeof(T));
         }

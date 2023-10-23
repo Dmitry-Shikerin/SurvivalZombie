@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Programs\Unity Projects\MyGraduationProject\FloderSurvivalZombie\SurvivalZombie" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Animations" t="Include">
+          <e p="Gates" t="Include" />
+        </e>
+        <e p="Animators" t="Include">
+          <e p="PlayerAnimators" t="Include" />
+        </e>
+        <e p="Prefabs" t="Include">
+          <e p="Bildings" t="Include">
+            <e p="SurroundDeadFolder" t="Include">
+              <e p="Standard Assets" t="Include">
+                <e p="Environment" t="Include">
+                  <e p="Water" t="Include">
+                    <e p="Water" t="Include">
+                      <e p="Materials" t="Include" />
+                      <e p="Scripts" t="Include">
+                        <e p="Water.cs" t="Include" />
+                      </e>
+                      <e p="Shaders" t="Include">
+                        <e p="FXWaterPro.shader" t="Include" />
+                      </e>
+                      <e p="Textures" t="Include" />
+                    </e>
+                  </e>
+                </e>
+              </e>
+              <e p="SurrounDead" t="Include">
+                <e p="Demo Scenes" t="Include" />
+                <e p="Documentation" t="Include">
+                  <e p="ChangeLog.txt" t="Include" />
+                  <e p="README.txt" t="Include" />
+                </e>
+                <e p="FX" t="Include">
+                  <e p="Fire" t="Include" />
+                  <e p="Fog" t="Include" />
+                  <e p="LightShafts" t="Include">
+                    <e p="Materials" t="Include" />
+                  </e>
+                </e>
+                <e p="Icons" t="Include" />
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include">
+                  <e p="Addons" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Barricades" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Doors_Windows" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Fences" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Floors_Foundations" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Interior" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Lights" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Nature" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Props" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Resources" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Roofs" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Streets" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                    <e p="StreetDecals" t="Include" />
+                    <e p="StreetProps" t="Include" />
+                  </e>
+                  <e p="Vehicles" t="Include">
+                    <e p="Coliders" t="Include" />
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Walls" t="Include">
+                    <e p="Destroyed" t="Include" />
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Weapons" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                </e>
+                <e p="Post Processing" t="Include" />
+                <e p="Terrain" t="Include" />
+                <e p="Textures" t="Include">
+                  <e p="Interiors" t="Include" />
+                  <e p="PSD" t="Include" />
+                  <e p="Streets" t="Include" />
+                  <e p="Vehicles" t="Include" />
+                </e>
+              </e>
+              <e p="SurrounDead Bundle" t="Include">
+                <e p="Instructions_SurrounDead - Bundle.txt" t="Include" />
+              </e>
+              <e p="SurrounDead Bunker" t="Include">
+                <e p="Documentation" t="Include">
+                  <e p="ChangeLog.txt" t="Include" />
+                  <e p="README.txt" t="Include" />
+                </e>
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include">
+                  <e p="Bunker" t="Include">
+                    <e p="Animations" t="Include" />
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Hydroponics" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include">
+                      <e p="Materials" t="Include" />
+                    </e>
+                  </e>
+                  <e p="Items" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Panels &amp; Monitors" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Pipes &amp; Cables" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Platform" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Props" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                </e>
+                <e p="Post Processing" t="Include" />
+              </e>
+              <e p="SurrounDead Encampment" t="Include">
+                <e p="Documentation" t="Include">
+                  <e p="ChangeLog.txt" t="Include" />
+                  <e p="README.txt" t="Include" />
+                </e>
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include">
+                  <e p="Items" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Makeshift_Structures" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Modular_Container" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Props" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Tower_FenceWalk" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                </e>
+                <e p="Post Processing" t="Include" />
+                <e p="Terrain" t="Include" />
+              </e>
+              <e p="SurrounDead Garden" t="Include">
+                <e p="Documentation" t="Include">
+                  <e p="ChangeLog.txt" t="Include" />
+                  <e p="README.txt" t="Include" />
+                </e>
+                <e p="Materials" t="Include" />
+                <e p="Models" t="Include">
+                  <e p="GreenHouse" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Plants" t="Include">
+                    <e p="Materials" t="Include" />
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="Props" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                  <e p="RaisedBeds" t="Include">
+                    <e p="Models" t="Include" />
+                  </e>
+                </e>
+                <e p="Post Processing" t="Include" />
+                <e p="Terrain" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="MyPrefabs" t="Include">
+            <e p="Trees" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="ManNeko_Assets(Player)" t="Include">
+              <e p="Adventurer Blake" t="Include">
+                <e p="Animations" t="Include" />
+                <e p="FBX" t="Include" />
+                <e p="Materials" t="Include" />
+                <e p="Prefab" t="Include" />
+                <e p="Read Me.txt" t="Include" />
+                <e p="Sample Scene" t="Include" />
+                <e p="Textures" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="HONETi(UIThemes)" t="Include">
+              <e p="Demo" t="Include" />
+              <e p="Sources" t="Include" />
+              <e p="TexturesThemeBlack" t="Include">
+                <e p="Input" t="Include" />
+              </e>
+              <e p="TexturesThemeCommon" t="Include">
+                <e p="Buttons" t="Include">
+                  <e p="ButtonaNormalDark" t="Include">
+                    <e p="ButtonsNormal" t="Include" />
+                  </e>
+                  <e p="ButtonsOutline" t="Include" />
+                  <e p="ButtonsRed" t="Include">
+                    <e p="ButtonsColors" t="Include" />
+                    <e p="ButtonsNormal" t="Include" />
+                  </e>
+                  <e p="Others" t="Include" />
+                </e>
+                <e p="Fonts" t="Include">
+                  <e p="OFL.txt" t="Include" />
+                </e>
+                <e p="Icons" t="Include">
+                  <e p="128x128px" t="Include" />
+                  <e p="256x256px" t="Include" />
+                  <e p="32x32px" t="Include" />
+                  <e p="512x512px" t="Include" />
+                  <e p="64x64px" t="Include" />
+                </e>
+                <e p="Misc" t="Include" />
+                <e p="Panels" t="Include" />
+                <e p="Sliders" t="Include">
+                  <e p="Bubble" t="Include" />
+                </e>
+              </e>
+              <e p="TexturesThemeGreen" t="Include">
+                <e p="ButtonsColor" t="Include" />
+                <e p="Input" t="Include" />
+              </e>
+              <e p="TexturesThemePink" t="Include">
+                <e p="ButtonsColors" t="Include" />
+                <e p="ButtonsNormal" t="Include" />
+                <e p="Input" t="Include" />
+              </e>
+              <e p="TexturesThemePurple" t="Include">
+                <e p="ButtonsColors" t="Include" />
+                <e p="ButtonsNormal" t="Include" />
+                <e p="Input" t="Include" />
+              </e>
+              <e p="TexturesThemeRed" t="Include">
+                <e p="Input" t="Include" />
+              </e>
+              <e p="TexturesThemeYellow" t="Include">
+                <e p="ButtonsColors" t="Include" />
+                <e p="Input" t="Include" />
+              </e>
+            </e>
+            <e p="Survival Flat Icons by Kat Grabowska" t="Include">
+              <e p="250plus survival flat icons" t="Include" />
+              <e p="read me - katgrabowska_survivalicons.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scenes" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+          </e>
+          <e p="Interactions" t="Include">
+            <e p="IInteractible.cs" t="Include" />
+            <e p="InteractionItems" t="Include">
+              <e p="Gates" t="Include">
+                <e p="InteractionMetallGate.cs" t="Include" />
+              </e>
+              <e p="Trees" t="Include">
+                <e p="InteractionTree.cs" t="Include" />
+                <e p="InteractionWoodpie.cs" t="Include" />
+              </e>
+            </e>
+            <e p="ITakeble.cs" t="Include" />
+          </e>
+          <e p="Inventories" t="Include">
+            <e p="Abstract" t="Include">
+              <e p="IInventory.cs" t="Include" />
+              <e p="IInventoryItem.cs" t="Include" />
+              <e p="IInventoryItemInfo.cs" t="Include" />
+              <e p="IInventoryItemState.cs" t="Include" />
+              <e p="IInventorySlot.cs" t="Include" />
+            </e>
+            <e p="InventoryItemInfo.cs" t="Include" />
+            <e p="InventoryItemState.cs" t="Include" />
+            <e p="InventorySlot.cs" t="Include" />
+            <e p="InventoryTester.cs" t="Include" />
+            <e p="InventoryWithSlots.cs" t="Include" />
+            <e p="Items" t="Include">
+              <e p="Apple.cs" t="Include" />
+              <e p="ItemInfo" t="Include" />
+              <e p="Pepper.cs" t="Include" />
+              <e p="WoodPie.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Players" t="Include">
+            <e p="AnimationControllers" t="Include">
+              <e p="PlayerAnimationController.cs" t="Include" />
+            </e>
+            <e p="Movements" t="Include">
+              <e p="PlayerMovement.cs" t="Include" />
+              <e p="PlayerMovementCharacteristics.cs" t="Include" />
+            </e>
+            <e p="MyPlayer.cs" t="Include" />
+            <e p="PlayerInteractions" t="Include">
+              <e p="Overlap" t="Include">
+                <e p="DrawGizmosType.cs" t="Include" />
+                <e p="OverlapType.cs" t="Include" />
+                <e p="PlayerOverlapCollision.cs" t="Include" />
+              </e>
+              <e p="PlayerInteraction.cs" t="Include" />
+            </e>
+            <e p="PlayerPresenter.cs" t="Include" />
+            <e p="PlayerStateMachines" t="Include">
+              <e p="States" t="Include">
+                <e p="Contexts" t="Include">
+                  <e p="ContextChangeWeapon.cs" t="Include" />
+                  <e p="ContextInput.cs" t="Include" />
+                </e>
+                <e p="IdleState.cs" t="Include" />
+                <e p="JumpState.cs" t="Include" />
+                <e p="NoGunState.cs" t="Include" />
+                <e p="NoScopeState.cs" t="Include" />
+                <e p="RunState.cs" t="Include" />
+              </e>
+              <e p="Transitions" t="Include">
+                <e p="TransitionToNoGunState.cs" t="Include" />
+                <e p="TransitionToNoScopeState.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="StateMachines" t="Include">
+            <e p="StateMachine.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="Context" t="Include">
+                <e p="IContext.cs" t="Include" />
+              </e>
+              <e p="StateBase.cs" t="Include" />
+            </e>
+            <e p="Transitions" t="Include">
+              <e p="ITransition.cs" t="Include" />
+              <e p="Transition.cs" t="Include" />
+              <e p="TransitionBase.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UI" t="Include">
+            <e p="Interactions" t="Include">
+              <e p="UIInteraction.cs" t="Include" />
+            </e>
+            <e p="Inventoryes" t="Include">
+              <e p="Inventory" t="Include">
+                <e p="UIInventory.cs" t="Include" />
+                <e p="UIInventorySecond.cs" t="Include" />
+                <e p="UIInventoryTester.cs" t="Include" />
+              </e>
+              <e p="Items" t="Include">
+                <e p="UIInventoryItem.cs" t="Include" />
+                <e p="UIItem.cs" t="Include" />
+              </e>
+              <e p="Slots" t="Include">
+                <e p="UIInventorySlot.cs" t="Include" />
+                <e p="UISlot.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Weapons" t="Include">
+            <e p="Weapon.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Documentation" t="Include" />
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Fonts &amp; Materials" t="Include" />
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Sprite Assets" t="Include" />
+            <e p="Style Sheets" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SurvivalZombie.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\klubn\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\klubn\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_SurvivalZombie.-1192798772.00" t="ExcludeRecursive" />
+  </component>
+</project>

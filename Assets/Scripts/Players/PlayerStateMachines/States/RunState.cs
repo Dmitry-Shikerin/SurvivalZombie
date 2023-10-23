@@ -1,26 +1,27 @@
 using System.Collections.Generic;
 using Players.PlayerStateMachines.Transitions;
+using StateMachines.Transitions;
 
 namespace Players.PlayerStateMachines.States
 {
-    public class NoScopePlayerState : PlayerStateBase
+    public class RunState : StateBase
     {
         private readonly PlayerAnimationController _playerAnimationController;
 
-        public NoScopePlayerState(List<IPlayerTransition> transitions, 
+        public RunState(IEnumerable<ITransition> transitions,
             PlayerAnimationController playerAnimationController) : base(transitions)
         {
             _playerAnimationController = playerAnimationController;
         }
-        
+
         public override void Enter()
         {
-            _playerAnimationController.PlayNoScope();
+            _playerAnimationController.PlayRun();
         }
 
         public override void Exit()
         {
-            
+            base.Exit();
         }
     }
 }

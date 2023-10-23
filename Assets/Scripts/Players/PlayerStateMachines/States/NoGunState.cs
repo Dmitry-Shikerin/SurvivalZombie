@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using Players.PlayerStateMachines.Transitions;
+using StateMachines.Transitions;
 using UnityEngine;
 
 namespace Players.PlayerStateMachines.States
 {
-    public class NoGunPlayerState : PlayerStateBase
+    public class NoGunState : StateBase
     {
-        public NoGunPlayerState(List<IPlayerTransition> transitions) : base(transitions)
+        public NoGunState(List<ITransition> transitions) : base(transitions)
         {
             
         }
