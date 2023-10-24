@@ -290,6 +290,12 @@
           <e p="Camera" t="Include">
             <e p="CameraFollow.cs" t="Include" />
           </e>
+          <e p="Factorys" t="Include">
+            <e p="AbstractInventoryItemFactory.cs" t="Include" />
+            <e p="New Folder" t="Include">
+              <e p="InventoryItemFactory.cs" t="Include" />
+            </e>
+          </e>
           <e p="Interactions" t="Include">
             <e p="IInteractible.cs" t="Include" />
             <e p="InteractionItems" t="Include">
@@ -312,6 +318,7 @@
               <e p="IInventorySlot.cs" t="Include" />
             </e>
             <e p="InventoryItemInfo.cs" t="Include" />
+            <e p="InventoryItemInfoSecond.cs" t="Include" />
             <e p="InventoryItemState.cs" t="Include" />
             <e p="InventorySlot.cs" t="Include" />
             <e p="InventoryTester.cs" t="Include" />
@@ -358,6 +365,7 @@
                 <e p="TransitionToNoScopeState.cs" t="Include" />
               </e>
             </e>
+            <e p="PlayerWeaponChanger.cs" t="Include" />
           </e>
           <e p="StateMachines" t="Include">
             <e p="StateMachine.cs" t="Include" />

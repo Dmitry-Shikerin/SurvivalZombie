@@ -4,8 +4,8 @@ using StateMachines.Transitions;
 
 namespace Players.PlayerStateMachines.Transitions
 {
-    public class
-        TransitionToNoGunState : TransitionBase<NoGunState, ContextChangeWeapon>
+    //Не используемый поскольку у нас есть 
+    public class TransitionToNoGunState : TransitionBase<NoGunState, ContextChangeWeapon>
     {
         public override bool CanTransit(ContextChangeWeapon context)
         {

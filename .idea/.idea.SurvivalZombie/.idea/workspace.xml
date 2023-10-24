@@ -23,43 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f8880ac-2406-4fd5-b34d-bd7e20db6998" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/States.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/States/Context.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factorys/New Folder/InventoryItemFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factorys/New Folder/InventoryItemFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItemInfoSecond.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItemInfoSecond.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerWeaponChanger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerWeaponChanger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SurvivalZombie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/Trees/InteractionTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/Trees/InteractionTree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/Trees/InteractionWoodpie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/Trees/InteractionWoodpie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/PlayerStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/StateMachine.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextChangeWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextChangeWeapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/IContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/States/Context/IContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/IContext.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/States/Context/IContext.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/IdlePlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/IdleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/IdlePlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/IdleState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/JumpPlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/JumpState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/JumpPlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/JumpState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoGunPlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoGunState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoGunPlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoGunState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoScopePlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoScopeState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoScopePlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/NoScopeState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/PlayerStateBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/States/StateBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/PlayerStateBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/States/StateBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/RunPlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/RunState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/RunPlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/RunState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/IPlayerTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/ITransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/IPlayerTransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/ITransition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/Transition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/Transition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransitionBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/TransitionBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/PlayerTransitionBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/TransitionBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunPlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunPlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopePlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopeState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopePlayerState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopeState.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Inventoryes/Inventory/UIInventorySecond.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Inventoryes/Inventory/UIInventorySecond.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +69,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/Transition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/Transitions/TransitionBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StateMachines/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoScopeState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Inventoryes/Inventory/UIInventorySecond.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/States/Contexts/ContextChangeWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerWeaponChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerStateMachines/Transitions/TransitionToNoGunState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerPresenter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factorys/AbstractItemFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factorys/AbstractInventoryItemFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventories/InventoryItemInfoSecond.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factorys/New Folder/InventoryItemFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/Trees/InteractionWoodpie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractionItems/Trees/InteractionTree.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +95,7 @@
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -173,7 +157,8 @@
       <workItem from="1697958121346" duration="5476000" />
       <workItem from="1697989970519" duration="3249000" />
       <workItem from="1697998570597" duration="2523000" />
-      <workItem from="1698082709554" duration="1150000" />
+      <workItem from="1698082709554" duration="4404000" />
+      <workItem from="1698128048184" duration="4978000" />
     </task>
     <servers />
   </component>
@@ -196,5 +181,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="100" key="RiderGenerateDialog" timestamp="1698130431207">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="549" y="100" key="RiderGenerateDialog/0.0.1440.852/0.1800.2304.691@0.0.1440.852" timestamp="1698130431207" />
+    <state x="222" y="71" key="SettingsEditor" timestamp="1698128081049">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="222" y="71" key="SettingsEditor/0.0.1440.852/0.1800.2304.691@0.0.1440.852" timestamp="1698128081049" />
   </component>
 </project>

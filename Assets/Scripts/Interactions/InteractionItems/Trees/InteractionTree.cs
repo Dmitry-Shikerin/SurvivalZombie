@@ -23,12 +23,6 @@ public class InteractionTree : MonoBehaviour, IInteractible
         _woodPie.gameObject.SetActive(false);
     }
 
-    void Update()
-    {
-        
-    }
-
-    
     public void Interact()
     {
         if (_currentNumberAxeBlows <= _maxNumberAxeBlows)
